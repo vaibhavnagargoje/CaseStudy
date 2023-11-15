@@ -47,7 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function createAnimationBox(iteration, value) {
       const animationBox = document.createElement('div');
       animationBox.className = 'animation-box';
-      animationBox.innerHTML = `<span>${iteration}</span><span>${value}</span>`;
+      // animationBox.innerHTML = `<span>${iteration}</span><span>${value}</span>`;
+    animationBox.innerHTML = `<span style="color:white; position:relative; top:-15px; ">${iteration}</span><span style= "font-weight:bold; font-size:30px">${value}</span>`;
+
       animationContainer.appendChild(animationBox);
       return animationBox;
     }
